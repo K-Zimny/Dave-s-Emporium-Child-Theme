@@ -26,7 +26,7 @@ get_header(); ?>
 			<div class="content-wrapper">
 				<div class="mission-content">
 					<?php
-						$post_id = 8;
+						$post_id = 15;
 						$queried_post = get_post($post_id);
 						echo $queried_post->post_content;
 					?>
@@ -38,7 +38,7 @@ get_header(); ?>
 			<div class="content-wrapper">
 				<div class="shop-content">
 					<?php
-						$post_id = 15;
+						$post_id = 16;
 						$queried_post = get_post($post_id);
 						echo $queried_post->post_content;
 					?>
@@ -69,7 +69,7 @@ get_header(); ?>
 					</div>
 				</figure>
 				<div class="content-button">
-					<button class="button" type="button" onclick="location.href='#contact';">SHOP NOW</button>
+					<button class="button" type="button" onclick="location.href='#contact';">Learn more</button>
 				</div>
 			</div>
 		</section>
@@ -89,7 +89,7 @@ get_header(); ?>
 					</div>
 				</figure>
 				<div class="content-button">
-					<button class="button" type="button" onclick="location.href='#contact';">SHOP NOW</button>
+					<button class="button" type="button" onclick="location.href='#contact';">learn more</button>
 				</div>
 			</div>
 		</section>
