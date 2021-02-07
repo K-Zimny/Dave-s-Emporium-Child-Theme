@@ -64,6 +64,40 @@ html {
 }
 
 
+/* roboto-slab-300 - latin */
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-slab-v13-latin-300.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/roboto-slab-v13-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-slab-v13-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-slab-v13-latin-300.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-slab-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-slab-v13-latin-300.svg#RobotoSlab') format('svg');
+    /* Legacy iOS */
+}
+
+
+/* roboto-slab-regular - latin */
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-slab-v13-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/roboto-slab-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-slab-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-slab-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-slab-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-slab-v13-latin-regular.svg#RobotoSlab') format('svg');
+    /* Legacy iOS */
+}
+
+
 /*  ============================================================
     Base Styles     (section related global styles)
     ============================================================ */
@@ -82,17 +116,25 @@ html {
 }
 
 .home-page h1 {
+    font-family: 'Raleway';
     font-size: 2.25em;
     font-weight: normal;
 }
 
 .home-page h2 {
+    font-family: 'Raleway';
     font-size: 1.125em;
     text-decoration: underline;
 }
 
 .home-page p {
+    font-family: 'Roboto Slab';
     font-size: .875em;
+}
+
+.home-page li {
+    font-family: 'Raleway';
+    font-size: 1em;
 }
 
 .home-page img {
@@ -126,6 +168,8 @@ html {
 
 .content-button {
     margin: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .content-button button {
@@ -151,12 +195,34 @@ html {
 /******************** homepage styles ********************/
 
 
+/*** header styles ***/
+
+
 /* logo styles */
 
-.logo figure {
+.header figure {
     width: 100%;
     margin-top: 5%;
 }
+
+
+/* header style */
+
+.header-title {
+    width: 45%;
+    font-family: 'Raleway';
+    font-size: 1.125em;
+}
+
+
+/* nav styles */
+
+.home-page nav {
+    display: none;
+}
+
+
+/*** body styles ***/
 
 
 /* mission styles */
@@ -213,38 +279,76 @@ html {
 
 /******************** homepage styles ********************/
 
-
-/* logo styles */
-
-.logo figure {}
-
-.logo img {}
-
-
-/* mission styles */
-
-.mission .content-wrapper {}
-
-
-/* shop styles */
-
-.shop .content-wrapper {}
-
-.shop-content {}
-
-
-/* education styles */
-
-.education .content-wrapper {}
-
-.education-content {}
-
-
-/* about styles */
-
-.about .content-wrapper {}
-
-.about-content {}
+@media (min-width:768px) {
+    /* base styles */
+    .home-page p {
+        font-size: .75em;
+    }
+    /*** header styles ***/
+    .header .content-wrapper {
+        width: 90%;
+        justify-content: space-between;
+        margin: 0;
+        margin: 0 5%;
+    }
+    /* logo styles */
+    .header figure {
+        margin-top: 1%;
+        width: 10%;
+    }
+    /* nav styles */
+    .home-page nav {
+        display: flex;
+        width: 40%;
+    }
+    .home-page nav ul {
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        list-style: none;
+        width: 100%;
+        padding: 0;
+    }
+    .home-page li {
+        text-decoration: underline;
+    }
+    /*** body styles ***/
+    /* mission styles */
+    .mission .content-wrapper {
+        margin-top: 0;
+    }
+    /* shop styles */
+    .shop .content-wrapper,
+    .education .content-wrapper,
+    .about .content-wrapper {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .shop-content,
+    .education-content,
+    .about-content {
+        width: 45%;
+        padding-top: 5%;
+    }
+    .shop-content h2,
+    .education-content h2,
+    .about-content h2 {
+        margin-top: 0;
+    }
+    .shop figure,
+    .education figure,
+    .about figure {
+        width: 45%;
+        padding-top: 5%;
+    }
+    /* education styles */
+    .education .content-wrapper {}
+    .education-content {}
+    /* about styles */
+    .about .content-wrapper {}
+    .about-content {}
+}
 
 
 /*  ============================================================
@@ -254,37 +358,59 @@ html {
 
 /******************** homepage styles ********************/
 
-
-/* logo styles */
-
-.logo .content-wrapper {}
-
-.logo figure {}
-
-.logo img {}
-
-
-/* mission styles */
-
-.mission .content-wrapper {}
-
-
-/* shop styles */
-
-.shop .content-wrapper {}
-
-.shop-content {}
-
-
-/* education styles */
-
-.education .content-wrapper {}
-
-.education-content {}
-
-
-/* about styles */
-
-.about .content-wrapper {}
-
-.about-content {}
+@media (min-width:1200px) {
+    /* base styles */
+    .home-page p {
+        font-size: 1em;
+    }
+    .content-button {
+        /* width: 62.5%; */
+        margin: 5%;
+    }
+    .content-button button {
+        background: #F08551;
+        padding: 25px 75px;
+        color: #000;
+    }
+    .content-button button:hover {
+        background: #D0250B;
+        padding: 25px 80px;
+    }
+    /* logo styles */
+    .logo .content-wrapper {}
+    .logo figure {}
+    .logo img {}
+    /* mission styles */
+    .mission .content-wrapper {}
+    /* shop styles */
+    .shop .content-wrapper,
+    .education .content-wrapper,
+    .about .content-wrapper {
+        height: 425px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .shop-content,
+    .education-content,
+    .about-content {
+        width: 45%;
+        padding-top: 5%;
+    }
+    .shop-content h2,
+    .education-content h2,
+    .about-content h2 {
+        margin-top: 0;
+    }
+    .shop figure,
+    .education figure,
+    .about figure {
+        width: 33%;
+        padding-top: 5%;
+    }
+    /* education styles */
+    .education .content-wrapper {}
+    .education-content {}
+    /* about styles */
+    .about .content-wrapper {}
+    .about-content {}
+}
