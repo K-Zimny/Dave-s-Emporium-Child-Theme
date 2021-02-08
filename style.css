@@ -29,6 +29,12 @@ html {
     display: none;
 }
 
+.entry .entry-content {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
 
 /* raleway-300 - latin */
 
@@ -102,12 +108,19 @@ html {
     Base Styles     (section related global styles)
     ============================================================ */
 
+h1:not(.site-title):before,
+h2:before,
 .home-page h1:not(.site-title):before,
 .home-page h2:before {
     content: none;
 }
 
-.home-page .content-wrapper {
+.entry .entry-title:before {
+    display: none;
+}
+
+.home-page .content-wrapper,
+.content-wrapper {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
@@ -132,12 +145,24 @@ html {
     font-size: .875em;
 }
 
+li,
 .home-page li {
     font-family: 'Raleway';
-    font-size: 1em;
+    font-size: .75em;
 }
 
 .home-page img {
+    width: 100%;
+}
+
+
+/* page edits */
+
+.entry .entry-content h4 {
+    width: 100%;
+}
+
+.entry .entry-content p {
     width: 100%;
 }
 
@@ -251,93 +276,109 @@ html {
     display: none;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+nav ul li {
+    text-align: center;
+    border: 1px solid #3B5C2B;
+    margin: 5px;
+}
+
+
+}
 
 /*** body styles ***/
 
-
 /* mission styles */
-
 .mission .content-wrapper {
     background: #AEB87D url("https://images.unsplash.com/photo-1536819114556-1e10f967fb61?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80") no-repeat center;
     background-size: cover;
     border: 3px solid #AEB87D;
     height: 500px;
 }
-
 .mission-content {
     width: 50%;
 }
-
 .mission-content h1 {
     line-height: 55px;
     color: #fff;
 }
 
-
 /* shop styles */
-
 .shop .content-wrapper {
     background: #AEB87D;
 }
 
-
 /* education styles */
-
 .education .content-wrapper {
     background: #BF7DB3;
 }
 
-
 /* about styles */
-
 .about .content-wrapper {
     background: #88B8B5;
 }
 
-
 /* footer styles */
-
 .site-footer {
     display: none;
 }
-
 
 /*  ============================================================
     Tablet Styles  
     ============================================================ */
 
-
 /******************** homepage styles ********************/
-
 @media (min-width:768px) {
     /* base styles */
+    
     .home-page p {
         font-size: .75em;
     }
     /*** header styles ***/
+    
     .header .content-wrapper {
         width: 90%;
         justify-content: space-between;
         margin: 0;
         margin: 0 5%;
     }
+    
     .header-title {
         display: flex;
-        width: 45%;
+        width: 30%;
         font-family: 'Raleway';
         font-size: 1.125em;
     }
     /* logo styles */
+    
     .header figure {
         margin-top: 1%;
         width: 10%;
     }
     /* nav styles */
-    .home-page nav {
+    
+    .home-page nav,
+    nav {
         display: flex;
-        width: 40%;
+        width: 55%;
     }
-    .home-page nav ul {
+    
+    .home-page nav ul,
+    nav ul {
         align-items: center;
         display: flex;
         flex-flow: row;
@@ -346,32 +387,44 @@ html {
         width: 100%;
         padding: 0;
     }
-    .home-page li {
+    
+    nav ul li {
+        border: none;
+        margin: 0;
+    }
+    
+    li:hover,
+    .home-page li:hover {
         text-decoration: underline;
     }
     /*** body styles ***/
     /* mission styles */
+    
     .mission .content-wrapper {
         margin-top: 0;
     }
     /* shop, education, about styles */
+    
     .shop .content-wrapper,
     .education .content-wrapper,
     .about .content-wrapper {
         align-items: center;
         justify-content: space-evenly;
     }
+    
     .shop-content,
     .education-content,
     .about-content {
         width: 45%;
         padding-top: 5%;
     }
+    
     .shop-content h2,
     .education-content h2,
     .about-content h2 {
         margin-top: 0;
     }
+    
     .shop figure,
     .education figure,
     .about figure {
@@ -380,33 +433,40 @@ html {
     }
 }
 
-
 /*  ============================================================
     Desktop Styles  
     ============================================================ */
 
-
 /******************** homepage styles ********************/
-
 @media (min-width:1200px) {
     /* base styles */
+    
     .home-page p {
         font-size: 1em;
     }
+    
     .content-button {
         /* width: 62.5%; */
         margin: 5%;
     }
+    
     .content-button button {
         background: #F08551;
         padding: 25px 75px;
         color: #000;
     }
+    
     .content-button button:hover {
         background: #D0250B;
         padding: 25px 80px;
     }
+    
+    li,
+    .home-page li {
+        font-size: 1em;
+    }
     /* shop, education, about styles */
+    
     .shop .content-wrapper,
     .education .content-wrapper,
     .about .content-wrapper {
@@ -414,17 +474,20 @@ html {
         align-items: flex-start;
         justify-content: space-evenly;
     }
+    
     .shop-content,
     .education-content,
     .about-content {
         width: 45%;
         padding-top: 5%;
     }
+    
     .shop-content h2,
     .education-content h2,
     .about-content h2 {
         margin-top: 0;
     }
+    
     .shop figure,
     .education figure,
     .about figure {
