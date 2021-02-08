@@ -141,6 +141,9 @@ html {
     width: 100%;
 }
 
+
+/* shop,education,about shared content */
+
 .shop .content-wrapper,
 .education .content-wrapper,
 .about .content-wrapper {
@@ -166,6 +169,32 @@ html {
     border: 3px solid #3B5C2B;
 }
 
+
+/* end shop,education,about shared content */
+
+
+/*styles for slideshow elements*/
+
+.shop .metaslider .flexslider,
+.education .metaslider .flexslider {
+    border: 3px solid #3B5C2B;
+}
+
+.shop .metaslider .flex-control-nav,
+.education .metaslider .flex-control-nav {
+    bottom: -40px;
+}
+
+.shop ul .slides {
+    transform: translate3d(-1200px, 0px, 0px);
+}
+
+
+/*end styles for slideshow elements*/
+
+
+/* button elements  */
+
 .content-button {
     margin: 5%;
     display: flex;
@@ -182,6 +211,9 @@ html {
     background: #D0250B;
     padding: 25px 80px;
 }
+
+
+/* end button elements  */
 
 
 /* might make content wrapper a base styles display flex */
@@ -209,9 +241,7 @@ html {
 /* header style */
 
 .header-title {
-    width: 45%;
-    font-family: 'Raleway';
-    font-size: 1.125em;
+    display: none;
 }
 
 
@@ -291,6 +321,12 @@ html {
         margin: 0;
         margin: 0 5%;
     }
+    .header-title {
+        display: flex;
+        width: 45%;
+        font-family: 'Raleway';
+        font-size: 1.125em;
+    }
     /* logo styles */
     .header figure {
         margin-top: 1%;
@@ -318,7 +354,7 @@ html {
     .mission .content-wrapper {
         margin-top: 0;
     }
-    /* shop styles */
+    /* shop, education, about styles */
     .shop .content-wrapper,
     .education .content-wrapper,
     .about .content-wrapper {
@@ -342,12 +378,6 @@ html {
         width: 45%;
         padding-top: 5%;
     }
-    /* education styles */
-    .education .content-wrapper {}
-    .education-content {}
-    /* about styles */
-    .about .content-wrapper {}
-    .about-content {}
 }
 
 
@@ -376,13 +406,7 @@ html {
         background: #D0250B;
         padding: 25px 80px;
     }
-    /* logo styles */
-    .logo .content-wrapper {}
-    .logo figure {}
-    .logo img {}
-    /* mission styles */
-    .mission .content-wrapper {}
-    /* shop styles */
+    /* shop, education, about styles */
     .shop .content-wrapper,
     .education .content-wrapper,
     .about .content-wrapper {
@@ -407,10 +431,4 @@ html {
         width: 33%;
         padding-top: 5%;
     }
-    /* education styles */
-    .education .content-wrapper {}
-    .education-content {}
-    /* about styles */
-    .about .content-wrapper {}
-    .about-content {}
 }
