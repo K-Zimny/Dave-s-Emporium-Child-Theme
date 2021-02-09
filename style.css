@@ -128,16 +128,21 @@ h2:before,
     margin: 5% 5%;
 }
 
-.home-page h1 {
+h1 {
     font-family: 'Raleway';
     font-size: 2.25em;
     font-weight: normal;
 }
 
-.home-page h2 {
+h2 {
     font-family: 'Raleway';
     font-size: 1.125em;
     text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Raleway';
+    font-size: 1.1em;
 }
 
 .home-page p {
@@ -155,11 +160,24 @@ li,
     width: 100%;
 }
 
-.bio-img {
+hr {
+    width:10%;
+    border-bottom: 1px black solid;
+}
+
+.bio-img-left {
     height: auto;
     max-width: 25%;
     position: relative;
     float: left;
+    margin: 3%;
+}
+
+.bio-img-right {
+    height: auto;
+    max-width: 25%;
+    position: relative;
+    float: right;
     margin: 3%;
 }
 
@@ -306,8 +324,6 @@ nav ul li {
 }
 
 
-}
-
 /*** body styles ***/
 
 /* mission styles */
@@ -343,6 +359,24 @@ nav ul li {
 /* footer styles */
 .site-footer {
     display: none;
+}
+
+/******************** about styles ********************/
+
+.bio {
+    margin-bottom: 5%;
+}
+
+.bio-img-left {
+    max-width: 80%;
+    margin: 5% 10%;
+    border: 3px solid #AEB87D;
+}
+
+.bio-img-right {
+    max-width: 80%;
+    margin: 5% 10%;
+    border: 3px solid #AEB87D;
 }
 
 /*  ============================================================
@@ -438,6 +472,17 @@ nav ul li {
     .about figure {
         width: 45%;
         padding-top: 5%;
+    }
+    /******************** about styles ********************/
+    
+    .bio-img-left {
+        max-width: 25%;
+        margin: 0 2%;
+    }
+    
+    .bio-img-right {
+        max-width: 25%;
+        margin: 0 2%;
     }
 }
 
