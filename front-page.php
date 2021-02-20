@@ -11,60 +11,13 @@ get_header(); ?>
 
 <section class="home-page">
 	<div class="main-content">
-		<section class="header">
-			<div class="content-wrapper">
-				<div class="navbar">
-					<div class="dropdown">
-						<button class="dropbtn">_____</br>_____</br>_____
-						<i class="fa fa-caret-down"></i>
-						</button>
-						<div class="dropdown-content">
-						<a href="http://daves-emporium.local/shop/">SHOP</a>
-						<a href="http://daves-emporium.local/education/">EDUCATION</a>
-						<a href="http://daves-emporium.local/our-story/">ABOUT</a>
-						<a href="http://daves-emporium.local/">COMMUNITY</a>
-						<a href="http://daves-emporium.local/">SOCIAL</a>
-						</div>
-					</div>
-				</div>
-				<figure>
-					<div class="header-img">
-						<a href="http://daves-emporium.local"> <img src="https://i1.wp.com/davesemporium.xyz/wp-content/uploads/2020/12/DE_LOGO.png?w=1920&ssl=1" /></a>
-					</div>
-				</figure>
-				<div class="header-title">
-					<p>Dave's Emporium</p>
-				</div>
-				<nav>
-					<ul>
-						<li>
-							<a style="color:black;" href="http://daves-emporium.local/shop/">SHOP</a>
-						</li>
-						<li>
-							<a style="color:black;" href="http://daves-emporium.local/education/">EDUCATION</a>						
-						</li>
-						<li>
-							<a style="color:black;" href="http://daves-emporium.local/our-story/">ABOUT</a>
-						</li>
-						<li>
-							<a style="color:black;" href="http://daves-emporium.local/">COMMUNITY</a>
-						</li>
-						<li>
-							<a style="color:black;" href="http://daves-emporium.local/">SOCIAL</a>						
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</section>
-
+		
 		<section class="mission">
 			<div class="content-wrapper">
 				<div class="mission-content">
-					<?php
-						$post_id = 15;
-						$queried_post = get_post($post_id);
-						echo $queried_post->post_content;
-					?>
+					<h1>
+						Canna Accessories and Seeds Hand Selected for Patients, By Patients
+					</h1>
 				</div>
 			</div>
 		</section>
@@ -72,13 +25,12 @@ get_header(); ?>
 		<section class="shop">
 			<div class="content-wrapper">
 				<div class="shop-content">
-					<?php
-						$post_id = 16;
-						$queried_post = get_post($post_id);
-						echo $queried_post->post_content;
-					?>
+					<h2>Seeds & Accessories</h2>
+					<p>
+						View our curated collection of seeds and accessories. From superb variates of seeds to custom accessories, we have everything you've ever wanted!
+					</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='#contact';">SHOP NOW</button>
+						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/shop/';">SHOP NOW</button>
 					</div>
 				</div>
 				<figure>
@@ -92,13 +44,12 @@ get_header(); ?>
 		<section class="education">
 			<div class="content-wrapper">
 				<div class="education-content">
-					<?php
-						$post_id = 18;
-						$queried_post = get_post($post_id);
-						echo $queried_post->post_content;
-						?>
+					<h2>Education</h2>
+					<p>
+						We not only nurture the seeds, we nurture the mind. View our library to read articles, find groups, and learn more about seeds, and life.
+					</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='#contact';">Learn more</button>
+						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/education/';">Learn more</button>
 					</div>
 				</div>
 				<figure>
@@ -112,13 +63,12 @@ get_header(); ?>
 		<section class="about">
 			<div class="content-wrapper">
 				<div class="about-content">
-					<?php
-						$post_id = 21;
-						$queried_post = get_post($post_id);
-						echo $queried_post->post_content;
-						?>
+				<h2>About us</h2>
+				<p>
+					Dave's Emporium started with a dream and with weed. Now that dream is being the best collection of seeds on the web. Read the whole story now!
+				</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='#contact';">learn more</button>
+						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/our-story/';">learn more</button>
 					</div>
 				</div>
 				<figure>
@@ -131,5 +81,6 @@ get_header(); ?>
 
 	</div>
 </section>
+
 
 <?php get_footer(); ?>

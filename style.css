@@ -17,35 +17,30 @@
     General Styles  (general element styles)
     ============================================================ */
 
-html {
-    font-size: 16px;
-}
+    html {
+        font-size: 16px;
+    }
+    
+    body{
+        background: #FAFAF2;}
+    
+    #page {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    }
+    
+    #content {
+        background: #FAFAF2;
+    }
+    
+    .entry .entry-content {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
 
-body{
-    background: #FAFAF2;}
-
-#page {
-width: 100%;
-max-width: 1400px;
-margin: 0 auto;
-}
-
-#content {
-    background: #FAFAF2;
-}
-
-.site-header {
-    display: none;
-}
-
-.entry .entry-content {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-
-/* raleway-300 - latin */
+    /* raleway-300 - latin */
 
 @font-face {
     font-family: 'Raleway';
@@ -112,7 +107,6 @@ margin: 0 auto;
     /* Legacy iOS */
 }
 
-
 /*  ============================================================
     Base Styles     (section related global styles)
     ============================================================ */
@@ -141,22 +135,55 @@ h1 {
     font-family: 'Raleway';
     font-size: 2.25em;
     font-weight: normal;
+    width: 100%;
 }
 
 h2 {
     font-family: 'Raleway';
     font-size: 1.125em;
     text-decoration: underline;
+    width: 100%;
+
 }
 
 h3 {
     font-family: 'Raleway';
     font-size: 1.1em;
+    width: 100%;
+
 }
 
-.home-page p {
+h4 {
+    font-family: 'Raleway';
+    font-size: 1em;
+    width: 100%;
+
+}
+
+h5 {
+    font-family: 'Raleway';
+    font-size: .9em;
+    width: 100%;
+
+}
+
+h6 {
+    font-family: 'Raleway';
+    font-size: .8em;
+    width: 100%;
+
+}
+
+p {
     font-family: 'Roboto Slab';
-    font-size: .875em;
+    font-size: 1em;
+    font-weight: normal;
+    width: 100%;
+
+}
+
+article ul {
+    width: 100%;
 }
 
 li,
@@ -170,6 +197,7 @@ li,
     width: 100%;
     top: 10%;
 }
+
 
 hr {
     width:10%;
@@ -192,7 +220,6 @@ hr {
     margin: 3%;
 }
 
-
 /* page edits */
 
 .entry .entry-content h4 {
@@ -203,8 +230,7 @@ hr {
     width: 100%;
 }
 
-
-/* shop,education,about shared content */
+/* shop,education,about shared content  */
 
 .shop .content-wrapper,
 .education .content-wrapper,
@@ -233,7 +259,6 @@ hr {
 
 
 /* end shop,education,about shared content */
-
 
 /*styles for slideshow elements*/
 
@@ -277,91 +302,11 @@ hr {
 
 /* end button elements  */
 
-/* start nav bar */
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    background-color: transparent;
-    font-family: Arial;
-    margin-right: 75%;
-    margin-bottom: -5%;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: #000;
-    padding: 0;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #AEB87D;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-    width: 50%;
-  }
-/* end nav bar */
-
-/* might make content wrapper a base styles display flex */
-
-
 /*  ============================================================
     Mobile Styles  
     ============================================================ */
 
-
 /******************** homepage styles ********************/
-
 
 /*** header styles ***/
 
@@ -371,6 +316,23 @@ hr {
 .header figure {
     width: 100%;
     margin-top: 5%;
+}
+
+.site-header {
+    padding: 3% 7%;
+}
+
+
+.site-branding-container .site-title {
+    display: none;
+}
+
+.site-branding-container .site-logo {
+    display: none;
+}
+
+.site-branding-container .main-navigation {
+    font-size: 1.35em;
 }
 
 
@@ -383,7 +345,7 @@ hr {
 
 /* nav styles */
 
-.home-page nav {
+/* .home-page nav {
     display: none;
 }
 
@@ -406,8 +368,7 @@ nav ul li {
     text-align: center;
     border: 1px solid #3B5C2B;
     margin: 5px;
-}
-
+} */
 
 /*** body styles ***/
 
@@ -424,6 +385,7 @@ nav ul li {
 .mission-content h1 {
     line-height: 55px;
     color: #fff;
+    text-align: center;
 }
 
 /* shop styles */
@@ -444,24 +406,6 @@ nav ul li {
 /* footer styles */
 .site-footer {
     display: none;
-}
-
-/******************** about styles ********************/
-
-.bio {
-    margin-bottom: 5%;
-}
-
-.bio-img-left {
-    max-width: 80%;
-    margin: 5% 10%;
-    border: 3px solid #AEB87D;
-}
-
-.bio-img-right {
-    max-width: 80%;
-    margin: 5% 10%;
-    border: 3px solid #AEB87D;
 }
 
 /*  ============================================================
@@ -491,9 +435,9 @@ nav ul li {
         font-size: 1.125em;
     }
 
-    /* nav bar styles  */
+       /* nav bar styles  */
 
-    .navbar {
+       .navbar {
         display: none;
     }
     /* logo styles */
@@ -508,7 +452,7 @@ nav ul li {
     }
     /* nav styles */
     
-    .home-page nav,
+    /* .home-page nav,
     nav {
         display: flex;
         width: 55%;
@@ -533,8 +477,10 @@ nav ul li {
     li:hover,
     .home-page li:hover {
         text-decoration: underline;
-    }
+    } */
+
     /*** body styles ***/
+
     /* mission styles */
     
     .mission .content-wrapper {
@@ -568,17 +514,6 @@ nav ul li {
         width: 45%;
         padding-top: 5%;
     }
-    /******************** about styles ********************/
-    
-    .bio-img-left {
-        max-width: 25%;
-        margin: 0 2%;
-    }
-    
-    .bio-img-right {
-        max-width: 25%;
-        margin: 0 2%;
-    }
 }
 
 /*  ============================================================
@@ -586,11 +521,15 @@ nav ul li {
     ============================================================ */
 
 /******************** homepage styles ********************/
-@media (min-width:1400px) {
+@media (min-width:1366px) {
     /* base styles */
     
+    .home-page h2 {
+        font-size: 1.75em;
+
+    }
     .home-page p {
-        font-size: 1em;
+        font-size: 1.25em;
     }
     
     .content-button {
