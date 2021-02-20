@@ -192,11 +192,10 @@ li,
     font-size: .75em;
 }
 
-.home-page img {
-    /* position: absolute; */
+/* .home-page img {
     width: 100%;
     top: 10%;
-}
+} */
 
 
 hr {
@@ -313,15 +312,24 @@ hr {
 
 /* logo styles */
 
-.header figure {
-    width: 100%;
-    margin-top: 5%;
+.custom-logo {
+width: 100%;
+order: 2;
+-webkit-order: 2;
 }
 
 .site-header {
     padding: 3% 7%;
 }
 
+.logo-nav {
+    display: flex;
+    flex-flow: column;
+}
+
+.site-branding-container {
+    width: 100%;
+}
 
 .site-branding-container .site-title {
     display: none;
@@ -374,7 +382,7 @@ nav ul li {
 
 /* mission styles */
 .mission .content-wrapper {
-    background: #AEB87D url("https://images.unsplash.com/photo-1536819114556-1e10f967fb61?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80") no-repeat center;
+    background: #AEB87D url("") no-repeat center;
     background-size: cover;
     border: 3px solid #AEB87D;
     height: 500px;
@@ -421,11 +429,37 @@ nav ul li {
     }
     /*** header styles ***/
     
+    /* logo styles */
+
+    .custom-logo {
+        width:20%;
+        order: 1;
+        -webkit-order: 1;
+    }
+
+    .logo-nav{
+        flex-flow: row;
+    }
+
+    .site-branding-container {
+        order: 2;
+        -webkit-order: 2;
+    }
+
     .header .content-wrapper {
         width: 90%;
         justify-content: space-between;
         margin: 0;
         margin: 0 5%;
+    }
+
+    .site-branding {
+        margin: 0;
+    }
+
+    .site-branding-container {
+        display: flex;
+        justify-content: flex-end;    
     }
     
     .header-title {
@@ -525,11 +559,11 @@ nav ul li {
     /* base styles */
     
     .home-page h2 {
-        font-size: 1.75em;
+        font-size: 1.5em;
 
     }
     .home-page p {
-        font-size: 1.25em;
+        font-size: 1em;
     }
     
     .content-button {
@@ -552,6 +586,32 @@ nav ul li {
     .home-page li {
         font-size: 1em;
     }
+
+    /*** header styles  ***/
+
+    
+    .logo-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #custom-logo {
+        width: 15%;
+    }
+
+
+    
+    .site-branding {
+        margin: 0;
+    }
+
+    .site-branding-container {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     /* shop, education, about styles */
     
     .shop .content-wrapper,

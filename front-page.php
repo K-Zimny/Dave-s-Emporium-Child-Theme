@@ -16,7 +16,7 @@ get_header(); ?>
 			<div class="content-wrapper">
 				<div class="mission-content">
 					<h1>
-						Canna Accessories and Seeds Hand Selected for Patients, By Patients
+					A Community Market for Patients by Patients.
 					</h1>
 				</div>
 			</div>
@@ -35,7 +35,7 @@ get_header(); ?>
 				</div>
 				<figure>
 					<div class="shop-img">
-						<?php echo do_shortcode('[metaslider id="60"]'); ?>
+						<?php echo do_shortcode('[metaslider id="682"]'); ?>
 					</div>
 				</figure>
 			</div>
@@ -46,7 +46,7 @@ get_header(); ?>
 				<div class="education-content">
 					<h2>Education</h2>
 					<p>
-						We not only nurture the seeds, we nurture the mind. View our library to read articles, find groups, and learn more about seeds, and life.
+						View our library to read articles, find groups, and learn more about seeds and accessories.
 					</p>
 					<div class="content-button">
 						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/education/';">Learn more</button>
@@ -65,7 +65,7 @@ get_header(); ?>
 				<div class="about-content">
 				<h2>About us</h2>
 				<p>
-					Dave's Emporium started with a dream and with weed. Now that dream is being the best collection of seeds on the web. Read the whole story now!
+					Dave's Emporium started with a dream. Now that dream is being the best collection of seeds on the web. Read the whole story now!
 				</p>
 					<div class="content-button">
 						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/our-story/';">learn more</button>
