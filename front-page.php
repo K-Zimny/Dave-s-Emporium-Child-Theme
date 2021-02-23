@@ -16,7 +16,7 @@ get_header(); ?>
 			<div class="content-wrapper">
 				<div class="mission-content">
 					<h1>
-					A Community Market for Patients by Patients.
+					A Community Market for Patients by Patients
 					</h1>
 				</div>
 			</div>
@@ -30,12 +30,12 @@ get_header(); ?>
 						View our curated collection of seeds and accessories. From superb variates of seeds to custom accessories, we have everything you've ever wanted!
 					</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/shop/';">SHOP NOW</button>
+						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/shop/';">SHOP NOW</button>
 					</div>
 				</div>
 				<figure>
 					<div class="shop-img">
-						<?php echo do_shortcode('[metaslider id="682"]'); ?>
+						<?php echo do_shortcode('[metaslider id="1032"]'); ?>
 					</div>
 				</figure>
 			</div>
@@ -49,12 +49,12 @@ get_header(); ?>
 						View our library to read articles, find groups, and learn more about seeds and accessories.
 					</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/education/';">Learn more</button>
+						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/education/';">Learn more</button>
 					</div>
 				</div>
 				<figure>
 					<div class="education-img">
-						<?php echo do_shortcode('[metaslider id="75"]'); ?>
+						<?php echo do_shortcode('[metaslider id="1039"]'); ?>
 						</div>
 				</figure>
 			</div>
@@ -68,12 +68,12 @@ get_header(); ?>
 					Dave's Emporium started with a dream. Now that dream is being the best collection of seeds on the web. Read the whole story now!
 				</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='http://daves-emporium.local/our-story/';">learn more</button>
+						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/our-story/';">learn more</button>
 					</div>
 				</div>
 				<figure>
 					<div class="about-img">
-						<?php echo do_shortcode('[metaslider id="79"]'); ?>
+						<?php echo do_shortcode('[metaslider id="1037"]'); ?>
 					</div>
 				</figure>
 			</div>

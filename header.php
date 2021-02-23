@@ -26,11 +26,10 @@
 
 		<header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
 
-            <div class="logo-nav" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo-nav">
                 <figure class="custom-logo">
-                    <img id="custom-logo" style="width: 100%;" src="https://i1.wp.com/davesemporium.xyz/wp-content/uploads/2020/12/DE_LOGO.png?w=1920&ssl=1" alt="custom-logo"/>
+                    <img id="custom-logo"  src="https://i1.wp.com/davesemporium.xyz/wp-content/uploads/2020/12/DE_LOGO.png?w=1920&ssl=1" alt="custom-logo"/>
                 </figure>
-                <!-- <h3 style="width: 15%">Dave's Emporium</h3>    -->
                 <div class="site-branding-container">
                     <?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
                 </div><!-- .site-branding-container -->
