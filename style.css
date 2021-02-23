@@ -32,9 +32,9 @@
 /* =================================================== */
   
     #page {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
     }
     
     #content {
@@ -199,11 +199,6 @@ li,
     font-size: .75em;
 }
 
-/* .home-page img {
-    width: 100%;
-    top: 10%;
-} */
-
 
 hr {
     width:10%;
@@ -305,8 +300,8 @@ hr {
     padding: 25px 80px;
 }
 
-
 /* end button elements  */
+
 
 /*  ============================================================
     Mobile Styles  
@@ -316,8 +311,20 @@ hr {
 
 /*** header styles ***/
 
+.site-header {
+    padding: 3% 7%;
+}
+
+.header-title {
+    display: none;
+}
 
 /* logo styles */
+
+.logo-nav {
+    display: flex;
+    flex-flow: column;
+}
 
 .custom-logo {
 width: 100%;
@@ -325,26 +332,18 @@ order: 2;
 -webkit-order: 2;
 }
 
-.site-header {
-    padding: 3% 7%;
+.site-branding-container .site-logo {
+    display: none;
 }
 
-.logo-nav {
-    display: flex;
-    flex-flow: column;
-}
+/* nav styles */
 
 .site-branding-container {
     width: 100%;
     overflow: hidden;
-
 }
 
 .site-branding-container .site-title {
-    display: none;
-}
-
-.site-branding-container .site-logo {
     display: none;
 }
 
@@ -352,53 +351,21 @@ order: 2;
     font-size: 1.35em;
 }
 
-
-/* header style */
-
-.header-title {
-    display: none;
-}
-
-
-/* nav styles */
-
-/* .home-page nav {
-    display: none;
-}
-
-nav {
-    display: none;
-    justify-content: center;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-nav ul li {
-    text-align: center;
-    border: 1px solid #3B5C2B;
-    margin: 5px;
-} */
-
 /*** body styles ***/
 
 /* mission styles */
+
 .mission .content-wrapper {
     background: #AEB87D url("https://images.unsplash.com/photo-1508748169069-82590c9f26e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80") no-repeat center;
     background-size: cover;
     border: 3px solid #AEB87D;
     height: 500px;
 }
+
 .mission-content {
     width: 60%;
 }
+
 .mission-content h1 {
     line-height: 55px;
     color: black;
@@ -411,42 +378,47 @@ nav ul li {
 }
 
 /* shop styles */
+
 .shop .content-wrapper {
     background: #AEB87D;
 }
 
 /* education styles */
+
 .education .content-wrapper {
     background: #BF7DB3;
 }
 
 /* about styles */
+
 .about .content-wrapper {
     background: #88B8B5;
 }
 
 /* footer styles */
+
 .site-footer {
     display: none;
 }
 
 /*********** Single item page **********/
 
-.image-filters-enabled .site-header.featured-image:after {
-    opacity: 0;
+.site-header.featured-image {
+    min-height: 45vh;
 }
 
 .site-header.featured-image .site-branding .site-title, .site-header.featured-image .site-branding .site-description, .site-header.featured-image .main-navigation a:after, .site-header.featured-image .main-navigation .main-menu > li.menu-item-has-children:after, .site-header.featured-image .main-navigation li, .site-header.featured-image .social-navigation li, .site-header.featured-image .entry-meta, .site-header.featured-image .entry-title {
     color: black;
 }
 
+.image-filters-enabled .site-header.featured-image:after {
+    opacity: 0;
+}
+
 .image-filters-enabled .site-header.featured-image .site-featured-image:after{
     opacity: 0;
 }
 
-.site-header.featured-image {
-    min-height: 45vh;
-}
 
 /*  ============================================================
     Tablet Styles  
@@ -459,94 +431,38 @@ nav ul li {
     .home-page p {
         font-size: .75em;
     }
+
+
     /*** header styles ***/
-    
+
     /* logo styles */
 
+    .logo-nav{
+        flex-flow: row;
+    }
     .custom-logo {
         width: 20%;
         order: 1;
         -webkit-order: 1;
     }
 
-
-
-    .logo-nav{
-        flex-flow: row;
-    }
-
     .site-branding-container {
         order: 2;
         -webkit-order: 2;
-    }
-
-    .header .content-wrapper {
-        width: 90%;
-        justify-content: space-between;
-        margin: 0;
-        margin: 0 5%;
+        display: flex;
+        justify-content: flex-end; 
     }
 
     .site-branding {
         margin: 0;
     }
 
-    .site-branding-container {
-        display: flex;
-        justify-content: flex-end;    
-    }
-    
-    .header-title {
-        display: flex;
-        width: 30%;
-        font-family: 'Raleway';
-        font-size: 1.125em;
-    }
+    /* nav  styles  */
 
-       /* nav bar styles  */
-
-       .navbar {
+    .navbar {
         display: none;
     }
-    /* logo styles */
     
-    .header figure {
-        margin-top: 1%;
-        width: 10%;
-    }
-
-    .home-page .img {
-        position: inherit;
-    }
-    /* nav styles */
-    
-    /* .home-page nav,
-    nav {
-        display: flex;
-        width: 55%;
-    }
-    
-    .home-page nav ul,
-    nav ul {
-        align-items: center;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        list-style: none;
-        width: 100%;
-        padding: 0;
-    }
-    
-    nav ul li {
-        border: none;
-        margin: 0;
-    }
-    
-    li:hover,
-    .home-page li:hover {
-        text-decoration: underline;
-    } */
-
     /*** body styles ***/
 
     /* mission styles */
@@ -565,6 +481,7 @@ nav ul li {
         padding: 5%;
         opacity: 95%;
     }
+
     /* shop, education, about styles */
     
     .shop .content-wrapper,
@@ -607,6 +524,7 @@ nav ul li {
 
 /******************** homepage styles ********************/
 @media (min-width:1366px) {
+
     /* base styles */
     
     .home-page h2 {
@@ -616,23 +534,7 @@ nav ul li {
     .home-page p {
         font-size: 1em;
     }
-    
-    .content-button {
-        /* width: 62.5%; */
-        margin: 5%;
-    }
-    
-    .content-button button {
-        background: #F08551;
-        padding: 25px 75px;
-        color: #000;
-    }
-    
-    .content-button button:hover {
-        background: #D0250B;
-        padding: 25px 80px;
-    }
-    
+      
     li,
     .home-page li {
         font-size: 1em;
@@ -640,7 +542,7 @@ nav ul li {
 
     /*** header styles  ***/
 
-    
+    /* logo styles  */
     .logo-nav {
         display: flex;
         justify-content: space-between;
@@ -651,17 +553,12 @@ nav ul li {
         width: 20%;
     }
 
-
-    
-    .site-branding {
-        margin: 0;
-    }
-
     .site-branding-container {
         width: 70%;
         display: flex;
         justify-content: flex-end;
     }
+    
 
     /* shop, education, about styles */
     
@@ -673,19 +570,6 @@ nav ul li {
         justify-content: space-evenly;
     }
     
-    .shop-content,
-    .education-content,
-    .about-content {
-        width: 45%;
-        padding-top: 5%;
-    }
-    
-    .shop-content h2,
-    .education-content h2,
-    .about-content h2 {
-        margin-top: 0;
-    }
-    
     .shop figure,
     .education figure,
     .about figure {
@@ -693,9 +577,9 @@ nav ul li {
         padding-top: 5%;
     }
 
-        /*********** Single item page **********/
+    /*********** Single item page **********/
     
-        .site-header.featured-image {
-            min-height: 30vh;
-        }
+    .site-header.featured-image {
+        min-height: 30vh;
+    }
 }
