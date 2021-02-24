@@ -330,6 +330,7 @@ hr {
 width: 100%;
 order: 2;
 -webkit-order: 2;
+margin: -10% 0 -5%;
 }
 
 .site-branding-container .site-logo {
@@ -459,6 +460,8 @@ order: 2;
         width: 20%;
         order: 1;
         -webkit-order: 1;
+        margin: 0;
+        
     }
 
     .site-branding-container {
