@@ -27,7 +27,7 @@
 /* =================================================== */
 /* NOT SURE IF I WANT TO DO IT THIS WAY */
     body {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         }
 /* =================================================== */
   
@@ -340,7 +340,6 @@ order: 2;
 
 .site-branding-container {
     width: 100%;
-    overflow: hidden;
 }
 
 .site-branding-container .site-title {
@@ -383,10 +382,20 @@ order: 2;
     background: #AEB87D;
 }
 
+.shop h2,
+.shop p {
+    text-align: center;
+}
+
 /* education styles */
 
 .education .content-wrapper {
     background: #BF7DB3;
+}
+
+.education h2,
+.education p {
+    text-align: center;
 }
 
 /* about styles */
@@ -394,6 +403,12 @@ order: 2;
 .about .content-wrapper {
     background: #88B8B5;
 }
+
+.about h2,
+.about p {
+    text-align: center;
+}
+
 
 /* footer styles */
 
@@ -461,6 +476,12 @@ order: 2;
 
     .navbar {
         display: none;
+    }
+
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link,
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link,
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link {
+    font-family: raleway;
     }
     
     /*** body styles ***/
