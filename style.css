@@ -312,7 +312,7 @@ hr {
 /*** header styles ***/
 
 .site-header {
-    padding: 3% 7%;
+    padding: 1% 5% 0;
 }
 
 .header-title {
@@ -455,7 +455,9 @@ margin: -10% 0 -5%;
 
     .logo-nav{
         flex-flow: row;
+        align-items: center;
     }
+
     .custom-logo {
         width: 20%;
         order: 1;
@@ -547,7 +549,7 @@ margin: -10% 0 -5%;
     ============================================================ */
 
 /******************** homepage styles ********************/
-@media (min-width:1366px) {
+@media (min-width:1200px) {
 
     /* base styles */
     

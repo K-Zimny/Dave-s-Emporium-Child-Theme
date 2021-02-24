@@ -30,7 +30,7 @@ get_header(); ?>
 						View our curated collection of seeds and accessories. From superb variates of seeds to custom accessories, we have everything you've ever wanted!
 					</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/shop/';">SHOP NOW</button>
+						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/shop/';">Shop Now</button>
 					</div>
 				</div>
 				<figure>
@@ -49,7 +49,7 @@ get_header(); ?>
 						View our library to read articles, find groups, and learn more about seeds and accessories.
 					</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/education/';">Learn more</button>
+						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/education/';">Learn More</button>
 					</div>
 				</div>
 				<figure>
@@ -68,7 +68,7 @@ get_header(); ?>
 					Dave's Emporium started with a dream. Now that dream is being the best collection of seeds on the web. Read the whole story now!
 				</p>
 					<div class="content-button">
-						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/our-story/';">learn more</button>
+						<button class="button" type="button" onclick="location.href='https://davesemporium.xyz/our-story/';">Learn More</button>
 					</div>
 				</div>
 				<figure>
