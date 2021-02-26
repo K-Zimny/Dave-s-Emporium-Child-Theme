@@ -8,15 +8,15 @@ add_action( 'wp_enqueue_scripts', 'daves_emporium_scripts' );
 //create custom post types 
 function create_custom_post_types() {
 	//custom post type for case studies
-    register_post_type( 'user_inputs',
+    register_post_type( 'our_team',
         array(
             'labels' => array(
-                'name' => __( 'User Inputs' ),
-                'singular_name' => __( 'User Input' )
+                'name' => __( 'Our Team' ),
+                'singular_name' => __( 'Team Member' )
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array( 'slug' => 'user-inputs' ),
+            'rewrite' => array( 'slug' => 'our-team' ),
         )
     );
 }

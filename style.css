@@ -139,50 +139,52 @@ h2:before,
 }
 
 h1 {
-    font-family: 'Raleway';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.25em;
-    font-weight: normal;
+    font-weight: 400;
     width: 100%;
 }
 
 h2 {
-    font-family: 'Raleway';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.125em;
     text-decoration: underline;
+    font-weight: 500;
     width: 100%;
 
 }
 
 h3 {
-    font-family: 'Raleway';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1em;
     width: 100%;
 
 }
 
 h4 {
-    font-family: 'Raleway';
-    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05em;
     width: 100%;
+    font-weight: normal;
 
 }
 
 h5 {
-    font-family: 'Raleway';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: .9em;
     width: 100%;
 
 }
 
 h6 {
-    font-family: 'Raleway';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: .8em;
     width: 100%;
 
 }
 
 p {
-    font-family: 'Roboto Slab';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     font-weight: normal;
     width: 100%;
@@ -195,7 +197,7 @@ article ul {
 
 li,
 .home-page li {
-    font-family: 'Raleway';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: .75em;
 }
 
@@ -205,21 +207,6 @@ hr {
     border-bottom: 1px black solid;
 }
 
-.bio-img-left {
-    height: auto;
-    max-width: 25%;
-    position: relative;
-    float: left;
-    margin: 3%;
-}
-
-.bio-img-right {
-    height: auto;
-    max-width: 25%;
-    position: relative;
-    float: right;
-    margin: 3%;
-}
 
 /* page edits */
 
@@ -420,7 +407,8 @@ margin: -10% 0 -5%;
 /*********** Single item page **********/
 
 .site-header.featured-image {
-    min-height: 45vh;
+    min-height: 30vh;
+    text-shadow: none;
 }
 
 .site-header.featured-image .site-branding .site-title, .site-header.featured-image .site-branding .site-description, .site-header.featured-image .main-navigation a:after, .site-header.featured-image .main-navigation .main-menu > li.menu-item-has-children:after, .site-header.featured-image .main-navigation li, .site-header.featured-image .social-navigation li, .site-header.featured-image .entry-meta, .site-header.featured-image .entry-title {
@@ -435,6 +423,44 @@ margin: -10% 0 -5%;
     opacity: 0;
 }
 
+/*********** About us page **********/
+
+.bio h1,
+.bio h2 {
+    text-align: center;
+}
+
+.bio-img-left {
+    border: 3px solid #AEB87D;
+}
+
+/*********** Shop page **********/
+
+.entry .entry-title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+div.sharedaddy, #content div.sharedaddy, #main div.sharedaddy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.site-header.featured-image .entry-title {
+    display: flex;
+    justify-content: center;
+
+}
+
+.site-header.featured-image .site-featured-image .entry-header .entry-meta {
+    display: none;
+}
+
+
+
 
 /*  ============================================================
     Tablet Styles  
@@ -443,7 +469,7 @@ margin: -10% 0 -5%;
 /******************** homepage styles ********************/
 @media (min-width:768px) {
     /* base styles */
-    
+
     .home-page p {
         font-size: .75em;
     }
@@ -483,11 +509,11 @@ margin: -10% 0 -5%;
         display: none;
     }
 
-    #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link,
+    /* #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link,
     #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link,
     #mega-menu-wrap-menu-1 #mega-menu-menu-1 a.mega-menu-link {
     font-family: raleway;
-    }
+    } */
     
     /*** body styles ***/
 
@@ -498,12 +524,12 @@ margin: -10% 0 -5%;
     }
 
     .mission-content h1 {
-        line-height: 55px;
+        line-height: 45px;
         color: black;
         text-align: center;
         background:#FAFAF2;
         border: 1px solid #AEB87D;
-        font-size: 3em;
+        font-size: 2.35em;
         padding: 5%;
         opacity: 95%;
     }
@@ -542,6 +568,36 @@ margin: -10% 0 -5%;
     .site-header.featured-image {
         min-height: 25vh;
     }
+
+    /*********** About out page **********/
+    
+    .bio .content-wrapper {
+        margin: 0 5% 2% 5%;
+    }
+
+
+    .bio-img-left {
+        height: auto;
+        max-width: 25%;
+        position: relative;
+        float: left;
+        margin: 3% 5% 5% 0;
+    }
+        
+    .bio-img-right {
+        height: auto;
+        max-width: 25%;
+        position: relative;
+        float: right;
+        margin: 3% 0 5% 5%;
+    }
+
+    /*********** Shop page **********/
+
+    div.sharedaddy, #content div.sharedaddy, #main div.sharedaddy {
+        justify-content: flex-start;
+}
+
 }
 
 /*  ============================================================
@@ -608,4 +664,5 @@ margin: -10% 0 -5%;
     .site-header.featured-image {
         min-height: 30vh;
     }
+
 }

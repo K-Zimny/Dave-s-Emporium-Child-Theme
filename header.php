@@ -28,8 +28,10 @@
 
             <div class="logo-nav">
                 <figure class="custom-logo">
-                    <img id="custom-logo"  src="https://i1.wp.com/davesemporium.xyz/wp-content/uploads/2020/12/DE_LOGO.png?w=1920&ssl=1" alt="custom-logo"/>
-                </figure>
+                    <a href="https://davesemporium.xyz/">
+						<img id="custom-logo"  src="https://i1.wp.com/davesemporium.xyz/wp-content/uploads/2020/12/DE_LOGO.png?w=1920&ssl=1" alt="custom-logo"/>
+					</a>
+				</figure>
                 <div class="site-branding-container">
                     <?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
                 </div><!-- .site-branding-container -->
